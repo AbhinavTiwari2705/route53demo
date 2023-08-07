@@ -11,7 +11,6 @@
             padding: 0;
             background-color: black;
             background-image: url('start.jpg');
-            /* Replace with your starry background image */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -24,31 +23,31 @@
         .image-container {
             display: flex;
             flex-direction: column;
-            /* Display images vertically */
+            
             align-items: center;
         }
 
         @media (max-width: 768px) {
             .image-container {
                 flex-direction: row;
-                /* Display images horizontally on mobile phones */
+                
             }
 
             .image {
                 width: 100%;
-                /* Resize images to fill the width of the screen */
+               
             }
         }
 
         .image {
             width: 45%;
-            /* Adjust the size as needed */
+            
             padding: 70px;
-            /* Adjust the spacing as needed */
+            
             box-sizing: border-box;
         }
 
-        /* Hide the scrollbar on mobile phones */
+        
         body {
             overflow-x: hidden;
         }
@@ -57,8 +56,8 @@
 
 <body>
     <div class="image-container">
-        <img class="image" src="image1.jpeg" alt="Image 1"> <!-- Replace with your first image -->
-        <img class="image" src="image2.jpeg" alt="Image 2"> <!-- Replace with your second image -->
+        <img class="image" src="image1.jpeg" alt="Image 1"> 
+        <img class="image" src="image2.jpeg" alt="Image 2"> 
     </div>
 </body>
 
