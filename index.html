@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Stars Background</title>
+    <title>Route53 Demo</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: black;
-            background-image: url('stars-background.jpg');
+            background-image: url('start.jpg');
             /* Replace with your starry background image */
             background-size: cover;
             background-repeat: no-repeat;
@@ -28,12 +28,29 @@
             align-items: center;
         }
 
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: row;
+                /* Display images horizontally on mobile phones */
+            }
+
+            .image {
+                width: 100%;
+                /* Resize images to fill the width of the screen */
+            }
+        }
+
         .image {
-            width:45% ;
+            width: 45%;
             /* Adjust the size as needed */
             padding: 70px;
             /* Adjust the spacing as needed */
             box-sizing: border-box;
+        }
+
+        /* Hide the scrollbar on mobile phones */
+        body {
+            overflow-x: hidden;
         }
     </style>
 </head>
